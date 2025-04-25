@@ -1,0 +1,210 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragiin - Revolutionizing Shopping</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        .header {
+            background-image: linear-gradient(to right, #009ffd, #2a2a72);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .header p {
+            margin-top: 5px;
+            font-size: 18px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #2a2a72;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ffd700;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            border-radius: 25px;
+            border: 2px solid #009ffd;
+            font-size: 16px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #2a2a72;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            margin-left: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Deals Section */
+        .deals {
+            padding: 20px;
+            text-align: center;
+            background-color: #f3f4f7;
+            border-top: 5px solid #2a2a72;
+        }
+
+        .deals h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .deal-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px;
+        }
+
+        .deal-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            min-width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .deal-card:hover {
+            transform: scale(1.05);
+        }
+
+        .deal-card img {
+            max-width: 100%;https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid&w=740
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .deal-card button {
+            background-color: #2a2a72;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .deal-card button:hover {
+            background-color: #009ffd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Welcome to Pragiin</h1>
+        <p>The one-stop shop for everything amazing!</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#categories">Categories</a>
+        <a href="#deals">Hot Deals</a>
+        <a href="#cart">Cart</a>
+        <a href="#wishlist">Wishlist</a>
+        <a href="#profile">Profile</a>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products, categories, or brands...">
+        <button onclick="search()">Search</button>
+    </div>
+
+    <!-- Hot Deals -->
+    <section class="deals" id="deals">
+        <h2>🔥 Hot Deals 🔥</h2>
+        <div class="deal-grid">
+            <div class="deal-card">
+                <img src="https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?semt=ais_hybrid&w=740" alt="Deal 1">
+                <h3>Smartphone - 50% Off</h3>
+                <button onclick="redirectToCart()">Add to Cart</button>
+                <button onclick="redirectToCheckout()">Buy Now</button>
+            </div>
+            <div class="deal-card">
+                <img src="https://blaupunktaudio.in/cdn/shop/files/bh41-bluetooth-wireless-over-ear-headphone-blue-1-.0.2.jpg?v=1723532548" alt="Deal 2">
+                <h3>Headphones - 30% Off</h3>
+                <button onclick="redirectToCart()">Add to Cart</button>
+                <button onclick="redirectToCheckout()">Buy Now</button>
+            </div>
+            <div class="deal-card">
+                <img src="https://m.media-amazon.com/images/I/613CqvGNUGL.jpg" alt="Deal 3">
+                <h3>Smartwatch - 40% Off</h3>
+                <button onclick="redirectToCart()">Add to Cart</button>
+                <button onclick="redirectToCheckout()">Buy Now</button>
+            </div>
+            <div class="deal-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/338900660/MI/FV/IV/195687344/gaming-console.jpg" alt="Deal 4">
+                <h3>Gaming Console - 20% Off</h3>
+                <button onclick="redirectToCart()">Add to Cart</button>
+                <button onclick="redirectToCheckout()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Pragiin. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function search() {
+            alert('Search is currently a placeholder. Coming soon!');
+        }
+
+        function redirectToCart() {
+            alert('Redirecting to cart...');
+            window.location.href = 'cart.html'; // Redirect to a cart page
+        }
+
+        function redirectToCheckout() {
+            alert('Redirecting to checkout...');
+            window.location.href = 'checkout.html'; // Redirect to the checkout page
+        }
+    </script>
+</body>
+</html>
