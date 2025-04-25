@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pragiin</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .checkout-header {
+            background-color: #2a2a72;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .checkout-header h1 {
+            margin: 0;
+        }
+
+        .checkout-container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .checkout-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .checkout-container p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .payment-options {
+            margin-top: 20px;
+        }
+
+        .payment-options button {
+            background-color: #2a2a72;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .payment-options button:hover {
+            background-color: #009ffd;
+        }
+    </style>
+</head>
+<body>
+    <header class="checkout-header">
+        <h1>Checkout</h1>
+    </header>
+
+    <div class="checkout-container">
+        <h2>Order Summary</h2>
+        <p>Total Items: 2</p>
+        <p>Total Price: $999.99</p>
+
+        <h2>Payment Options</h2>
+        <div class="payment-options">
+            <button onclick="redirectToSite('Credit Card')">Credit Card</button>
+            <button onclick="redirectToSite('https://www.paypal.com')">PayPal</button>
+            <button onclick="redirectToSite('https://www.indianbank.net.in')">Net Banking</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToSite(url) {
+            if (url === 'Credit Card') {
+                alert("Credit Card functionality coming soon!");
+            } else {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+</html>
